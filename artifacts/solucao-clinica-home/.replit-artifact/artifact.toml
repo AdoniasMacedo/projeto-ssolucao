@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Solução Clínica — Home"
+description = "Landing page demonstrativa e responsiva para uma clínica de atendimento clínico e escolar multidisciplinar, com foco em crianças, famílias e suporte pedagógico e terapêutico."
+version = "1.0.0"
+id = "artifacts/solucao-clinica-home"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25936
+
+[services.development]
+run = "pnpm --filter @workspace/solucao-clinica-home run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/solucao-clinica-home", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/solucao-clinica-home/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25936"
+BASE_PATH = "/"
