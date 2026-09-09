@@ -102,12 +102,8 @@ function Home() {
           <div className="relative lg:ml-0 lg:translate-x-3">
             <div className="absolute -right-5 -top-10 h-40 w-40 rounded-full bg-[#efc687]/35 blur-3xl" />
             <div className="absolute -bottom-8 -left-5 h-48 w-48 rounded-full bg-[#8ed5c8]/35 blur-3xl" />
-            <div className="float-slow relative overflow-hidden rounded-[36px] rounded-bl-[110px] border-[10px] border-[#fbfaf6] bg-[#dcece5] shadow-[0_24px_55px_rgba(30,83,78,.18)]">
-              <img src="/hero-cuidado.png" alt="Criança brincando em uma atividade de desenvolvimento com uma terapeuta" className="aspect-[1.08] w-full object-cover" data-testid="img-hero-care" />
-              <div className="absolute bottom-5 left-5 rounded-2xl bg-[#fbfaf6]/95 px-4 py-3 shadow-lg backdrop-blur">
-                <p className="text-[10px] font-bold uppercase tracking-[.14em] text-[#2b8c83]">Nosso jeito</p>
-                <p className="mt-1 font-display text-lg text-[#103f40]">Técnica com ternura.</p>
-              </div>
+            <div className="hero-image-cutout float-slow relative">
+              <img src="/hero-cuidado.png" alt="Criança brincando em uma atividade de desenvolvimento com uma terapeuta" className="block aspect-[1.08] w-full object-cover" data-testid="img-hero-care" />
             </div>
             <div className="absolute -right-2 top-8 hidden rounded-2xl bg-[#103f40] p-4 text-[#f7f2e8] shadow-xl sm:block">
               <p className="font-display text-3xl leading-none">4</p>
