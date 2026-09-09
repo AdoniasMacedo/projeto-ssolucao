@@ -77,8 +77,8 @@ function Home() {
 
       <section id="inicio" className="relative bg-[#f6f2e9] pt-[76px]">
         <div className="container-shell grid min-h-[680px] items-center gap-10 py-16 lg:grid-cols-[.95fr_1.05fr] lg:gap-4 lg:py-20">
-          <div className="relative z-10 max-w-[580px]">
-            <h1 className="reveal reveal-delay-1 mt-0 max-w-[650px] font-display text-[clamp(3rem,6.5vw,6rem)] leading-[.98] tracking-[-.06em] text-[#103f40]">
+          <div className="relative z-10 max-w-[580px] lg:max-w-[540px]">
+            <h1 className="reveal reveal-delay-1 mt-0 max-w-[650px] font-display text-[clamp(3rem,6.5vw,6rem)] leading-[.98] tracking-[-.06em] text-[#103f40] lg:max-w-[540px] lg:text-[clamp(3rem,5.2vw,5.2rem)]">
               Atendimento clínico e escolar <em className="font-display not-italic text-[#169f94]">multidisciplinar.</em>
             </h1>
             <p className="reveal reveal-delay-2 mt-7 max-w-[480px] text-lg leading-8 text-[#4b6b69]">
@@ -131,14 +131,14 @@ function Home() {
                 <img src="/atividade-clinica.png" alt="Profissional conduzindo uma atividade de desenvolvimento com crianças" className="aspect-[2/3] w-full object-cover" data-testid="img-clinical-activity" />
               </div>
           </div>
-          <div className="grid gap-8 text-lg leading-8 text-[#55716d] sm:grid-cols-2">
+          <div className="grid max-w-[640px] gap-8 text-lg leading-8 text-[#55716d]">
             <div>
               <p>Na Solução, cada atendimento começa com uma escuta. Acolhemos histórias, respeitamos ritmos e construímos junto com a família um plano que faça sentido na vida real.</p>
             </div>
-            <div className="border-l border-[#cddfd8] pl-7">
+            <div className="border-t border-[#cddfd8] pt-8">
               <p>Clínica, escola e casa não são mundos separados. Quando se conectam, a criança ganha mais segurança para experimentar, aprender e se relacionar.</p>
             </div>
-            <div className="sm:col-span-2">
+            <div>
               <div className="mt-3 grid gap-3 border-t border-[#dce8e1] pt-7 sm:grid-cols-3">
                 {['Escuta antes da pressa', 'Plano feito em parceria', 'Conquistas que cabem no cotidiano'].map((item, index) => <div key={item} className="flex items-start gap-3 text-sm font-semibold leading-5 text-[#265d5d]"><span className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-[#dff1eb] text-[#218e84]">{index + 1}</span>{item}</div>)}
               </div>
