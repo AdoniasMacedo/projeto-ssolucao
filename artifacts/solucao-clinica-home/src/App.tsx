@@ -102,8 +102,8 @@ function Home() {
           <div className="relative lg:ml-0 lg:translate-x-3">
             <div className="absolute -right-5 -top-10 h-40 w-40 rounded-full bg-[#efc687]/35 blur-3xl" />
             <div className="absolute -bottom-8 -left-5 h-48 w-48 rounded-full bg-[#8ed5c8]/35 blur-3xl" />
-            <div className="hero-image-cutout float-slow relative">
-              <img src="/hero-cuidado.png" alt="Criança brincando em uma atividade de desenvolvimento com uma terapeuta" className="block aspect-[1.08] w-full object-cover" data-testid="img-hero-care" />
+            <div className="float-slow relative">
+              <img src="/hero-cuidado-cutout.png" alt="Criança brincando em uma atividade de desenvolvimento com uma terapeuta" className="block aspect-square w-full object-contain" data-testid="img-hero-care" />
             </div>
             <div className="absolute -right-2 top-8 hidden rounded-2xl bg-[#103f40] p-4 text-[#f7f2e8] shadow-xl sm:block">
               <p className="font-display text-3xl leading-none">4</p>

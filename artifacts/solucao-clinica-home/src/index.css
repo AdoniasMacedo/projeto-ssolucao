@@ -119,10 +119,6 @@
 .font-display { font-family: var(--app-font-serif); font-weight: 700; }
 .container-shell { width: min(1180px, calc(100% - 40px)); margin-inline: auto; }
 .eyebrow { letter-spacing: .15em; text-transform: uppercase; font-size: .7rem; font-weight: 700; }
-.hero-image-cutout {
-  -webkit-mask-image: radial-gradient(ellipse 76% 78% at 50% 50%, #000 62%, rgba(0, 0, 0, .94) 76%, transparent 100%);
-  mask-image: radial-gradient(ellipse 76% 78% at 50% 50%, #000 62%, rgba(0, 0, 0, .94) 76%, transparent 100%);
-}
 .grain::after {
   content: '';
   position: fixed;
