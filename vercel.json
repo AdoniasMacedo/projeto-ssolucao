@@ -1,5 +1,12 @@
 {
-  "buildCommand": "PORT=3000 BASE_PATH=/ pnpm --filter solucao-clinica-home build",
+  "buildCommand": "pnpm --filter solucao-clinica-home build",
   "outputDirectory": "artifacts/solucao-clinica-home/dist",
-  "installCommand": "pnpm install"
+  "installCommand": "pnpm install",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
