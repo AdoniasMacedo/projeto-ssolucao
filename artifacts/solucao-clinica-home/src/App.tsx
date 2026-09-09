@@ -76,9 +76,9 @@ function Home() {
       </header>
 
       <section id="inicio" className="relative bg-[#f6f2e9] pt-[76px]">
-        <div className="container-shell grid min-h-[680px] items-center gap-10 py-16 lg:grid-cols-[.95fr_1.05fr] lg:gap-4 lg:py-20">
-          <div className="relative z-10 max-w-[580px] lg:max-w-[540px]">
-            <h1 className="reveal reveal-delay-1 mt-0 max-w-[650px] font-display text-[clamp(3rem,6.5vw,6rem)] leading-[.98] tracking-[-.06em] text-[#103f40] lg:max-w-[540px] lg:text-[clamp(3rem,5.2vw,5.2rem)]">
+        <div className="container-shell grid min-h-[560px] items-center gap-8 py-12 lg:grid-cols-[.9fr_1.1fr] lg:gap-12 lg:py-14">
+          <div className="relative z-10 max-w-[580px] lg:max-w-[510px]">
+            <h1 className="reveal reveal-delay-1 mt-0 max-w-[650px] font-display text-[clamp(3rem,6.5vw,6rem)] leading-[.98] tracking-[-.06em] text-[#103f40] lg:max-w-[510px] lg:text-[clamp(2.8rem,4.8vw,4.8rem)]">
               Atendimento clínico e escolar <em className="font-display not-italic text-[#169f94]">multidisciplinar.</em>
             </h1>
             <p className="reveal reveal-delay-2 mt-7 max-w-[480px] text-lg leading-8 text-[#4b6b69]">
@@ -99,7 +99,7 @@ function Home() {
               <span>Uma equipe inteira olhando<br />para cada pequena conquista.</span>
             </div>
           </div>
-          <div className="relative lg:ml-8">
+          <div className="relative lg:ml-0 lg:translate-x-3">
             <div className="absolute -right-5 -top-10 h-40 w-40 rounded-full bg-[#efc687]/35 blur-3xl" />
             <div className="absolute -bottom-8 -left-5 h-48 w-48 rounded-full bg-[#8ed5c8]/35 blur-3xl" />
             <div className="float-slow relative overflow-hidden rounded-[36px] rounded-bl-[110px] border-[10px] border-[#fbfaf6] bg-[#dcece5] shadow-[0_24px_55px_rgba(30,83,78,.18)]">
