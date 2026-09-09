@@ -1,0 +1,5 @@
+{
+  "buildCommand": "PORT=3000 BASE_PATH=/ pnpm --filter solucao-clinica-home build",
+  "outputDirectory": "artifacts/solucao-clinica-home/dist",
+  "installCommand": "pnpm install"
+}
