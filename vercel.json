@@ -1,6 +1,6 @@
 {
   "buildCommand": "pnpm --filter solucao-clinica-home build",
-  "outputDirectory": "artifacts/solucao-clinica-home/dist",
+  "outputDirectory": "artifacts/solucao-clinica-home/dist/public",
   "installCommand": "pnpm install",
   "framework": "vite",
   "rewrites": [
