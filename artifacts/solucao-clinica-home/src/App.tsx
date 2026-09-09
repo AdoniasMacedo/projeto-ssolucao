@@ -128,7 +128,7 @@ function Home() {
             <h2 className="mt-5 max-w-[420px] font-display text-4xl leading-[1.02] tracking-[-.04em] text-[#103f40] sm:text-5xl">Um cuidado que enxerga a criança por inteiro.</h2>
             <a href={whatsappHref} target="_blank" rel="noreferrer" className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-[#1d8179] underline decoration-[#a9d8ce] decoration-2 underline-offset-8 transition-colors hover:text-[#103f40]" data-testid="link-about-whatsapp">Converse com quem entende <ArrowRight size={16} /></a>
             <div className="mt-10 overflow-hidden rounded-[28px] rounded-bl-[88px] border-[8px] border-[#f0f6f1] bg-[#dcece5] shadow-[0_20px_45px_rgba(30,83,78,.14)]">
-              <img src="/atividade-clinica.png" alt="Profissional conduzindo uma atividade de desenvolvimento com crianças" className="aspect-[1.12] w-full object-cover object-[center_38%]" data-testid="img-clinical-activity" />
+              <img src="/atividade-clinica.png" alt="Profissional conduzindo uma atividade de desenvolvimento com crianças" className="aspect-[2/3] w-full object-cover" data-testid="img-clinical-activity" />
               </div>
           </div>
           <div className="max-w-[640px] pt-1">
