@@ -184,19 +184,19 @@ function Home() {
       </header>
 
       <section id="inicio" className="relative bg-[#f6f2e9] pt-[76px] overflow-hidden">
-        {/* Imagem de fundo ajustada para ficar mais nítida e bem posicionada */}
-        <div className="absolute inset-0 z-0 flex justify-end">
+        {/* Imagem visível apenas em telas grandes (Desktop) como fundo absoluto */}
+        <div className="hidden lg:absolute lg:inset-0 lg:z-0 lg:flex lg:justify-end">
           <img
             src="/hero-cuidado-cutout.png"
             alt="Criança brincando em uma atividade de desenvolvimento com uma terapeuta"
-            className="h-full w-full lg:w-6/5 object-cover object-right opacity-45 lg:opacity-100"
-            data-testid="img-hero-care"
+            className="h-full w-full lg:w-6/5 object-cover object-right opacity-100"
+            data-testid="img-hero-care-desktop"
           />
-          {/* Gradiente suave apenas no lado esquerdo para o texto se destacar */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#f6f2e9] via-[#f6f2e9]/70 to-transparent lg:via-[#f6f2e9]/50" />
+          {/* Gradiente suave apenas no desktop para o texto se destacar */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#f6f2e9] via-[#f6f2e9]/50 to-transparent" />
         </div>
 
-        {/* Conteúdo de texto */}
+        {/* Conteúdo principal */}
         <div className="container-shell relative z-10 grid min-h-[560px] items-center gap-8 py-12 lg:grid-cols-[.9fr_1.1fr] lg:gap-12 lg:py-14">
           <div className="max-w-[580px] lg:max-w-[510px]">
             <h1 className="reveal reveal-delay-1 mt-0 max-w-[650px] font-display text-[clamp(3rem,6.5vw,6rem)] leading-[.98] tracking-[-.06em] text-[#103f40] lg:max-w-[510px] lg:text-[clamp(2.8rem,4.8vw,4.8rem)]">
@@ -204,8 +204,8 @@ function Home() {
               <em className="font-display not-italic text-[#169f94]">multidisciplinar.</em>
             </h1>
             <p className="reveal reveal-delay-2 mt-7 max-w-[480px] text-lg leading-8 text-[#4b6b69]">
-              Atendimento clínico e escolar multidisciplinar para crianças e famílias, com escuta,
-              técnica e caminhos possíveis.
+              Atendimento clínico e escolar especializado em autismo, TDAH, dislexia e apoio
+              pedagógico. Unimos técnica, escuta e caminhos possíveis para transformar vidas.
             </p>
             <div className="reveal reveal-delay-3 mt-9 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
               <a
@@ -242,6 +242,16 @@ function Home() {
                 para cada pequena conquista.
               </span>
             </div>
+          </div>
+
+          {/* Imagem em bloco visível apenas em telas menores (Mobile/Tablet abaixo de lg) */}
+          <div className="block lg:hidden w-full mt-4">
+            <img
+              src="/hero-cuidado-cutout.png"
+              alt="Criança brincando em uma atividade de desenvolvimento com uma terapeuta"
+              className="w-full h-auto object-cover rounded-2xl shadow-sm"
+              data-testid="img-hero-care-mobile"
+            />
           </div>
 
           <div className="hidden lg:block" />
