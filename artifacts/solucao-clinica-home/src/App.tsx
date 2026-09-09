@@ -122,7 +122,7 @@ function Home() {
       </section>
 
       <section id="sobre" className="bg-[#fbfaf6] py-20 lg:py-24">
-        <div className="container-shell grid items-start gap-12 lg:grid-cols-[.9fr_1.1fr] lg:gap-20">
+        <div className="container-shell grid items-start gap-12 lg:grid-cols-[.9fr_1.1fr] lg:items-center lg:gap-20">
           <div className="max-w-[480px]">
             <p className="eyebrow text-[#2b8c83]">A Solução</p>
             <h2 className="mt-5 max-w-[420px] font-display text-4xl leading-[1.02] tracking-[-.04em] text-[#103f40] sm:text-5xl">Um cuidado que enxerga a criança por inteiro.</h2>
