@@ -105,10 +105,6 @@ function Home() {
             <div className="float-slow relative">
               <img src="/hero-cuidado-cutout.png" alt="Criança brincando em uma atividade de desenvolvimento com uma terapeuta" className="block aspect-square w-full object-contain" data-testid="img-hero-care" />
             </div>
-            <div className="absolute -right-2 top-8 hidden rounded-2xl bg-[#103f40] p-4 text-[#f7f2e8] shadow-xl sm:block">
-              <p className="font-display text-3xl leading-none">4</p>
-              <p className="mt-1 max-w-[90px] text-[11px] leading-4 text-[#c3dfd5]">especialidades conectadas</p>
-            </div>
           </div>
         </div>
         <div className="container-shell flex items-center justify-between border-t border-[#d9e1d9] py-5 text-xs font-semibold uppercase tracking-[.12em] text-[#6b8982]">
