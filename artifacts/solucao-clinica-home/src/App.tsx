@@ -114,17 +114,17 @@ function Home() {
       </section>
 
       <section id="sobre" className="bg-[#fbfaf6] py-20 lg:py-24">
-        <div className="container-shell grid items-start gap-12 lg:grid-cols-[.9fr_1.1fr] lg:items-center lg:gap-20">
-          <div className="max-w-[480px]">
+        <div className="container-shell grid items-center gap-12 lg:grid-cols-[.9fr_1.1fr] lg:gap-20">
+          <div className="order-2 max-w-[480px] lg:order-1">
+            <div className="overflow-hidden rounded-[28px] rounded-bl-[88px] border-[8px] border-[#f0f6f1] bg-[#dcece5] shadow-[0_20px_45px_rgba(30,83,78,.14)]">
+              <img src="/atividade-clinica.png" alt="Profissional conduzindo uma atividade de desenvolvimento com crianças" className="aspect-[2/3] w-full object-cover" data-testid="img-clinical-activity" />
+            </div>
+          </div>
+          <div className="order-1 max-w-[640px] lg:order-2">
             <p className="eyebrow text-[#2b8c83]">A Solução</p>
             <h2 className="mt-5 max-w-[420px] font-display text-4xl leading-[1.02] tracking-[-.04em] text-[#103f40] sm:text-5xl">Um cuidado que enxerga a criança por inteiro.</h2>
             <a href={whatsappHref} target="_blank" rel="noreferrer" className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-[#1d8179] underline decoration-[#a9d8ce] decoration-2 underline-offset-8 transition-colors hover:text-[#103f40]" data-testid="link-about-whatsapp">Converse com quem entende <ArrowRight size={16} /></a>
-            <div className="mt-10 overflow-hidden rounded-[28px] rounded-bl-[88px] border-[8px] border-[#f0f6f1] bg-[#dcece5] shadow-[0_20px_45px_rgba(30,83,78,.14)]">
-              <img src="/atividade-clinica.png" alt="Profissional conduzindo uma atividade de desenvolvimento com crianças" className="aspect-[2/3] w-full object-cover" data-testid="img-clinical-activity" />
-              </div>
-          </div>
-          <div className="max-w-[640px] pt-1">
-            <div className="grid gap-6 text-lg leading-8 text-[#55716d]">
+            <div className="mt-10 grid gap-6 text-lg leading-8 text-[#55716d]">
               <p>Na Solução, cada atendimento começa com uma escuta. Acolhemos histórias, respeitamos ritmos e construímos junto com a família um plano que faça sentido na vida real.</p>
               <p className="border-t border-[#cddfd8] pt-6">Clínica, escola e casa não são mundos separados. Quando se conectam, a criança ganha mais segurança para experimentar, aprender e se relacionar.</p>
             </div>
