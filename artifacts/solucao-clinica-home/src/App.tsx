@@ -1,5 +1,5 @@
 import { useState, type ReactNode } from 'react';
-import { ArrowDown, ArrowRight, Clock3, Instagram, Menu, MessageCircle, Minus, Plus, Quote, Sparkles, X } from 'lucide-react';
+import { ArrowDown, ArrowRight, Clock3, Instagram, Menu, MessageCircle, Minus, Plus, Quote, X } from 'lucide-react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ErrorBoundary } from '@/components/error-boundary';
 import { Toaster } from '@/components/ui/toaster';
@@ -26,11 +26,9 @@ const faqs = [
 function BrandMark({ light = false }: { light?: boolean }) {
   return (
     <a href="#inicio" className="flex items-center gap-2.5" data-testid="link-logo">
-      <span className={`relative grid h-10 w-10 place-items-center rounded-[14px] ${light ? 'bg-[#38c1b0] text-[#103f40]' : 'bg-[#103f40] text-[#eef8ef]'}`}>
-        <span className="font-display text-[26px] leading-none">S</span>
-        <span className={`absolute -bottom-1 -right-1 h-3 w-3 rounded-full border-2 ${light ? 'border-[#103f40] bg-[#f1b978]' : 'border-[#f9f5ed] bg-[#38c1b0]'}`} />
+      <span className={light ? 'rounded-lg bg-white px-2.5 py-1.5' : ''}>
+        <img src="/logo-solucao.png" alt="Solução" className="h-auto w-[124px]" data-testid="img-logo" />
       </span>
-      <span className={`font-display text-[26px] tracking-[-0.04em] ${light ? 'text-[#f7f2e8]' : 'text-[#103f40]'}`}>Solução</span>
     </a>
   );
 }
@@ -80,10 +78,7 @@ function Home() {
       <section id="inicio" className="relative bg-[#f6f2e9] pt-[76px]">
         <div className="container-shell grid min-h-[680px] items-center gap-10 py-16 lg:grid-cols-[.95fr_1.05fr] lg:gap-4 lg:py-20">
           <div className="relative z-10 max-w-[580px]">
-            <div className="reveal inline-flex items-center gap-2 rounded-full border border-[#b7ddd4] bg-[#e7f4ef] px-3.5 py-2 text-xs font-bold uppercase tracking-[.13em] text-[#22746e]" data-testid="text-hero-eyebrow">
-              <Sparkles size={13} /> Desenvolvimento que acolhe
-            </div>
-            <h1 className="reveal reveal-delay-1 mt-7 max-w-[650px] font-display text-[clamp(3.45rem,7vw,6.8rem)] leading-[.92] tracking-[-.06em] text-[#103f40]">
+            <h1 className="reveal reveal-delay-1 mt-0 max-w-[650px] font-display text-[clamp(3rem,6.5vw,6rem)] leading-[.98] tracking-[-.06em] text-[#103f40]">
               Atendimento clínico e escolar <em className="font-display not-italic text-[#169f94]">multidisciplinar.</em>
             </h1>
             <p className="reveal reveal-delay-2 mt-7 max-w-[480px] text-lg leading-8 text-[#4b6b69]">
@@ -132,6 +127,9 @@ function Home() {
             <p className="eyebrow text-[#2b8c83]">A Solução</p>
             <h2 className="mt-5 max-w-[420px] font-display text-4xl leading-[1.02] tracking-[-.04em] text-[#103f40] sm:text-5xl">Um cuidado que enxerga a criança por inteiro.</h2>
             <a href={whatsappHref} target="_blank" rel="noreferrer" className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-[#1d8179] underline decoration-[#a9d8ce] decoration-2 underline-offset-8 transition-colors hover:text-[#103f40]" data-testid="link-about-whatsapp">Converse com quem entende <ArrowRight size={16} /></a>
+              <div className="mt-10 overflow-hidden rounded-[28px] rounded-bl-[88px] border-[8px] border-[#f0f6f1] bg-[#dcece5] shadow-[0_20px_45px_rgba(30,83,78,.14)]">
+                <img src="/atividade-clinica.png" alt="Profissional conduzindo uma atividade de desenvolvimento com crianças" className="aspect-[2/3] w-full object-cover" data-testid="img-clinical-activity" />
+              </div>
           </div>
           <div className="grid gap-8 text-lg leading-8 text-[#55716d] sm:grid-cols-2">
             <div>

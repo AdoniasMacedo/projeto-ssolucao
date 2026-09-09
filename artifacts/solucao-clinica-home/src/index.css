@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
@@ -76,7 +76,7 @@
   --input: 174 20% 80%;
   --ring: 174 66% 43%;
   --app-font-sans: 'DM Sans', sans-serif;
-  --app-font-serif: 'Fraunces', Georgia, serif;
+  --app-font-serif: 'Manrope', 'DM Sans', sans-serif;
   --app-font-mono: 'DM Sans', monospace;
   --radius: 1rem;
   --shadow-soft: 0 18px 50px rgba(22, 73, 70, 0.11);
@@ -116,7 +116,7 @@
   ::selection { background: hsl(var(--accent) / .25); }
 }
 
-.font-display { font-family: var(--app-font-serif); }
+.font-display { font-family: var(--app-font-serif); font-weight: 700; }
 .container-shell { width: min(1180px, calc(100% - 40px)); margin-inline: auto; }
 .eyebrow { letter-spacing: .15em; text-transform: uppercase; font-size: .7rem; font-weight: 700; }
 .grain::after {
